@@ -38,4 +38,18 @@ if errorlevel 2 (
 
 echo.
 echo Fertig.
+echo Starte Script 3...
+
+choice /C YN /M "Soll die secpol App Paketregel XML importiert werden?"
+
+if errorlevel 2 (
+    echo Import uebersprungen.
+    pause
+    exit /b
+) else (
+    powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0import_App_pac_rules.ps1"
+)
+
+echo.
+echo Fertig.
 pause
