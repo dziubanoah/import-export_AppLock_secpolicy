@@ -23,3 +23,8 @@
     </FilePublisherRule>
   </RuleCollection>
 </AppLockerPolicy>
+
+<!--
+XML Policy aktiviert die default policys für AppLocker -> App Paketregeln
+by nonondr
+-->

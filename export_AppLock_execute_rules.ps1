@@ -16,3 +16,4 @@ Get-AppLockerPolicy -Local -Xml |
 
         $xml.Save($XmlFile)
     }
+#by nonondr

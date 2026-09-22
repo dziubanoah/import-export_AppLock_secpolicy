@@ -24,3 +24,10 @@
     </FilePathRule>
   </RuleCollection>
 </AppLockerPolicy>
+
+
+
+<!--
+XML Policy aktiviert default policys für AppLocker -> Ausführbare Regeln
+by nonondr
+-->
