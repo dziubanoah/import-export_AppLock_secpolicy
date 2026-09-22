@@ -14,4 +14,8 @@ echo.
 
 echo Starte Script 1...
 
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0export_AppLock_execute_rules.ps1"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0import_AppPac_and_exe_rules.ps1"
+
+PAUSE
+
+:: by nonondr
