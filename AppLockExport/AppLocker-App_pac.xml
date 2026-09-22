@@ -1,0 +1,25 @@
+﻿<AppLockerPolicy Version="1">
+  <RuleCollection Type="Appx" EnforcementMode="NotConfigured">
+    <FilePublisherRule
+      Id="a9e18c21-ff8f-43cf-b9fc-db40eed693ba"
+      Name="(Standardregel) Alle signierten App-Pakete"
+      Description="Ermöglicht Mitgliedern der Gruppe &quot;Jeder&quot; das Ausführen von signierten App-Paketen."
+      UserOrGroupSid="S-1-1-0"
+      Action="Allow">
+
+      <Conditions>
+        <FilePublisherCondition
+          PublisherName="*"
+          ProductName="*"
+          BinaryName="*">
+
+          <BinaryVersionRange
+            LowSection="0.0.0.0"
+            HighSection="99.99.99.99" />
+
+        </FilePublisherCondition>
+      </Conditions>
+
+    </FilePublisherRule>
+  </RuleCollection>
+</AppLockerPolicy>
