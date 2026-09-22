@@ -1,4 +1,4 @@
-$PolicyFolder = Join-Path $PSScriptRoot "AppLockExport/YourExport"
+$PolicyFolder = Join-Path $PSScriptRoot "AppLockExport\YourExport"
 $XmlFile = Join-Path $PolicyFolder "AppLocker-Exe.xml"
 
 New-Item -Path $PolicyFolder -ItemType Directory -Force | Out-Null
