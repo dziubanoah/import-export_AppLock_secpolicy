@@ -23,7 +23,7 @@ if errorlevel 2 (
 )
 
 echo.
-echo Script 1 fertig.
+echo Script 1 fertig. Falls der Export zum importieren genutzt werden soll bitte auf die ./ ebene von YourExport verschieben
 echo Starte Script 2...
 
 choice /C YN /M "Soll die secpol AppLock XML importiert werden?"
