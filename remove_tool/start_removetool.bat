@@ -1,6 +1,6 @@
 @echo off
 
-:: Prüfen, ob wir als Administrator laufen
+:: Admin prüfen
 net session >nul 2>&1
 
 if %errorlevel% neq 0 (
@@ -11,9 +11,7 @@ if %errorlevel% neq 0 (
 
 echo Als Administrator gestartet.
 echo.
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0rm_AppLock_exe_rules.ps1"
 
-echo Starte Script 1...
-
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0import_AppPac_and_exe_rules.ps1"
-
-:: by nonondr
+echo.
+echo Fertig.
